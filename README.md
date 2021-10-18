@@ -1,2 +1,3 @@
-# myposto-exercicios
-Exercícios de prática de Android da equipe MyPosto
+# Exercícios Grupo MyPosto
+
+Apps diversos para exercitar a criação de apps
