@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Agenda V4</string>
+    <string name="nome">nome</string>
+    <string name="telefone">telefone</string>
+    <string name="salvar">Salvar</string>
+    <string name="ordem_alfabetica">Ordem Alfabética</string>
+    <string name="editar">Editar</string>
+    <string name="excluir_contato">Excluir contato</string>
+    <string name="realmente_excluir">Deseja realmente excluir?</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="excluir">Excluir</string>
+    <string name="contato_excluido">Contato excluído</string>
+    <string name="contato_salvo">Contato salvo!</string>
+    <string name="editar_contato">Editar Contato</string>
+    <string name="ordenacao">Ordenação</string>
+    <string name="alfabetica_az">Alfabética A a Z</string>
+    <string name="alfabetica_za">Alfabética Z a A</string>
+    <string name="ordem_incercao">Ordem de Incerção</string>
+    <string name="favorito">Favorito</string>
+
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Thalia/git/Agenda/AgendaV4/app/src/main/res/drawable/botaocancelar.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/Thalia/git/Agenda/AgendaV4/app/src/main/res/drawable/botaosalvar.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/Thalia/git/Agenda/AgendaV4/app/src/main/res/drawable/edit.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/Thalia/git/Agenda/AgendaV4/app/src/main/res/drawable/entrada.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/Thalia/git/Agenda/AgendaV4/app/src/main/res/drawable/hmeajustes.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/Thalia/git/Agenda/AgendaV4/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1" />
+        <entry key="..\:/Users/Thalia/git/Agenda/AgendaV4/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.1" />
+        <entry key="..\:/Users/Thalia/git/Agenda/AgendaV4/app/src/main/res/drawable/ic_busca.xml" value="0.1" />
+        <entry key="..\:/Users/Thalia/git/Agenda/AgendaV4/app/src/main/res/drawable/itemcontato.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/Thalia/git/Agenda/AgendaV4/app/src/main/res/drawable/ordemalfabetica.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/Thalia/git/Agenda/AgendaV4/app/src/main/res/layout/activity_edit.xml" value="0.4" />
+        <entry key="..\:/Users/Thalia/git/Agenda/AgendaV4/app/src/main/res/layout/activity_home.xml" value="0.4" />
+        <entry key="..\:/Users/Thalia/git/Agenda/AgendaV4/app/src/main/res/layout/fragment_ajustes.xml" value="0.4" />
+        <entry key="..\:/Users/Thalia/git/Agenda/AgendaV4/app/src/main/res/layout/fragment_lista_contatos.xml" value="0.152" />
+        <entry key="..\:/Users/Thalia/git/Agenda/AgendaV4/app/src/main/res/layout/item_contato.xml" value="0.536" />
+        <entry key="..\:/Users/Thalia/git/Agenda/AgendaV4/app/src/main/res/menu/menu_top_busca.xml" value="0.4" />
+        <entry key="..\:/Users/Thalia/git/Agenda/AgendaV4/app/src/main/res/menu/navigation_menu.xml" value="0.4" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

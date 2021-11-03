@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".EditActivity">
+
+    <EditText
+        android:id="@+id/agenda_txtNome"
+        android:layout_width="381dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edit"
+        android:ems="10"
+        android:hint="@string/nome"
+        android:inputType="textPersonName"
+        android:nextFocusDown="@id/agenda_txtTelefone"
+        android:textColor="@color/white"
+        android:textColorHint="#D3C7C7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/agenda_txtTelefone"
+        android:layout_width="378dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edit"
+        android:ems="10"
+        android:hint="@string/telefone"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="#D3C7C7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/agenda_txtNome" />
+
+    <Button
+        android:id="@+id/agenda_btSalvar"
+        android:layout_width="116dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#000000"
+        android:text="@string/salvar"
+        android:textColor="#02E8D2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/agenda_txtTelefone" />
+
+    <ImageButton
+        android:id="@+id/btDeletar"
+        android:layout_width="53dp"
+        android:layout_height="56dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/agenda_txtTelefone"
+        app:layout_constraintTop_toBottomOf="@+id/agenda_txtTelefone"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switchContatoFavorito"
+        android:layout_width="135dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/entrada"
+        android:text="  Favorito"
+        android:textColor="#D3C7C7"
+        app:layout_constraintBottom_toTopOf="@+id/agenda_txtNome"
+        app:layout_constraintEnd_toEndOf="@+id/agenda_txtNome" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
