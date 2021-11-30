@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_ActionBar">#F6B844</color>
+    <color name="colorPrimary">#394F65</color>
+    <color name="colorPrimaryDark">#9AA1AA</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="success_color">#5BB030</color>
+    <color name="error_red">#B50F2D</color>
+    <color name="colorError">#B00020</color>
+    <color name="categoria_txt_color">#454545</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorOnPrimary">@color/white</color>
+    <color name="cinza">#F3F3F3</color>
+    <color name="gray">#F3F1F1</color>
+
+    <color name="saldo_cabecalho">#666666</color>
+    <color name="color_text_entrada">#454545</color>
+    <color name="color_text">#393737</color>
+    <color name="black">#000000</color>
+    <color name="black_222">#DE000000</color>
+    <color name="black_153">#99000000</color>
+    <color name="cinza_454545">#454545</color>
+    <color name="cinza_triplo70">#707070</color>
+
+    <color name="text_color">#A6000000</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="transparente">#00000000</color>
+
+    <color name="background_resumo_saida">#FFF3F1F1</color>
+</resources>

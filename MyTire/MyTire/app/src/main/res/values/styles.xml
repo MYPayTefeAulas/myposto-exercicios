@@ -1,0 +1,72 @@
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/color_ActionBar</item>
+        <item name="actionBarStyle">@style/MyTireActionBar</item>
+    </style>
+
+    <style name="MyTireActionBar" parent="Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="background">@color/color_ActionBar</item>
+    </style>
+
+    <style name="NoActionBar" parent="Theme.AppCompat.Light.NoActionBar" />
+
+    <style name="SucessTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/success_color</item>
+        <item name="colorPrimaryDark">@color/white</item>
+    </style>
+
+    <style name="ListsWithSearchTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/color_ActionBar</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="searchViewStyle">@style/MyCustomSearchViewStyle</item>
+        <item name="autoCompleteTextViewStyle">@style/MyCustomAutoCompleteTextViewStyle</item>
+    </style>
+
+    <style name="ScreensWithToolBar" parent="Theme.MaterialComponents.Light.NoActionBar" >
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="MyCustomAutoCompleteTextViewStyle" parent="Widget.AppCompat.Light.AutoCompleteTextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+
+    <style name="MyCustomSearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="searchHintIcon">@null</item>
+        <item name="closeIcon">@null</item>
+    </style>
+
+    <!-- Esse estilo MyPrimaryButton é utilizado para botões em telas
+    que têm um tema onde não há cor primária ou onde a cor accent tem
+    de ser diferente da cor da actionBar. -->
+    <style name="MyPrimaryButton" parent="Theme.MaterialComponents.Light">
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Ajustes_textButton">
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Ajustes_txtAuxiliar">
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="colorOnPrimary">@color/colorPrimary</item>
+    </style>
+
+</resources>

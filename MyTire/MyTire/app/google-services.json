@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "413555949356",
+    "project_id": "mytire-560c2",
+    "storage_bucket": "mytire-560c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:413555949356:android:3e3a1b15c261ddf281f689",
+        "android_client_info": {
+          "package_name": "br.uea.transirie.mypay.mytire"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "413555949356-kpummphj895tu9r5tfvps94ubl0vd1nl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDka0b_4AizabSWmCB7sJ09SfEn97geK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "413555949356-kpummphj895tu9r5tfvps94ubl0vd1nl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

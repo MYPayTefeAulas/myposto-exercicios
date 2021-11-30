@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageButton
+        android:id="@+id/homeF_btnConcluirServico"
+        android:layout_width="@dimen/home_width_btnServico"
+        android:layout_height="@dimen/home_height_btnServico"
+        android:background="@drawable/custom_button"
+        android:contentDescription="@string/saida_desc"
+        android:src="@drawable/ic_home_concluir_servico"
+        app:layout_constraintBottom_toBottomOf="@+id/homeF_btnNovoAtendimento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/homeF_btnNovoAtendimento"
+        app:layout_constraintTop_toTopOf="@+id/homeF_btnNovoAtendimento" />
+
+    <ImageButton
+        android:id="@+id/homeF_btnNovoAtendimento"
+        android:layout_width="@dimen/home_width_btnServico"
+        android:layout_height="@dimen/home_height_btnServico"
+        android:layout_marginTop="137dp"
+        android:background="@drawable/custom_button"
+        android:contentDescription="@string/entrada"
+        android:src="@drawable/ic_home_entrada_servico"
+        app:layout_constraintEnd_toStartOf="@+id/homeF_btnConcluirServico"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/homeF_btnAjustes"
+        style="@style/MyPrimaryButton"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/big_btn_height"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:includeFontPadding="false"
+        android:text="@string/ajustes_maiusculo"
+        android:textSize="@dimen/big_btn_txtSize"
+        app:layout_constraintEnd_toEndOf="@+id/homeF_btnConcluirServico"
+        app:layout_constraintStart_toStartOf="@+id/homeF_btnNovoAtendimento"
+        app:layout_constraintTop_toBottomOf="@+id/homeF_btnNovoAtendimento" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

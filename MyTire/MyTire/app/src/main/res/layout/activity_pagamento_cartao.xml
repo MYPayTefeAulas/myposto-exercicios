@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.pagamento.PagamentoCartaoActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_resumo_saida"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/pagCartao_tvPlaca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/text_placa"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/pagCartao_tvEntrada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/text_hora_entrada"
+            app:layout_constraintStart_toStartOf="@+id/pagCartao_tvPlacaValue"
+            app:layout_constraintTop_toBottomOf="@+id/pagCartao_tvPlacaValue" />
+
+        <TextView
+            android:id="@+id/pagCartao_tvSaida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="53dp"
+            android:text="@string/text_hora_saida"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toTopOf="@+id/pagCartao_tvEntrada" />
+
+        <TextView
+            android:id="@+id/pagCartao_tvTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/valor"
+            app:layout_constraintStart_toStartOf="@+id/pagCartao_tvEntradaValue"
+            app:layout_constraintTop_toBottomOf="@+id/pagCartao_tvEntradaValue" />
+
+        <TextView
+            android:id="@+id/pagCartao_tvPlacaValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/placa_example"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/pagCartao_tvPlaca"
+            app:layout_constraintTop_toBottomOf="@+id/pagCartao_tvPlaca" />
+
+        <TextView
+            android:id="@+id/pagCartao_tvEntradaValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/text_value_hora_entrada"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/pagCartao_tvEntrada"
+            app:layout_constraintTop_toBottomOf="@+id/pagCartao_tvEntrada" />
+
+        <TextView
+            android:id="@+id/pagCartao_tvSaidaValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/text_value_hora_saida"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/pagCartao_tvSaida"
+            app:layout_constraintTop_toTopOf="@+id/pagCartao_tvEntradaValue" />
+
+        <TextView
+            android:id="@+id/pagCartao_tvTotalValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="25dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/valor_example"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/pagCartao_tvTotal"
+            app:layout_constraintTop_toBottomOf="@+id/pagCartao_tvTotal" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="205dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/pagamentoCartao_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="16dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/pagamentoCartao_bt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/pagamentoCartao_btCancelar"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginBottom="@dimen/btn_marginBottom"
+        android:text="@string/cancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/pagamentoCartao_bt"
+        app:layout_constraintStart_toStartOf="@+id/pagamentoCartao_bt" />
+
+    <Button
+        android:id="@+id/pagamentoCartao_bt"
+        android:layout_width="@dimen/layout_width"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginStart="@dimen/btn_marginStart"
+        android:layout_marginEnd="@dimen/btn_marginEnd"
+        android:text="@string/concluir_pagamento"
+        app:layout_constraintBottom_toTopOf="@+id/pagamentoCartao_btCancelar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

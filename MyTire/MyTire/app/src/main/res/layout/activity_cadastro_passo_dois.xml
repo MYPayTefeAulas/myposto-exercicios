@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.cadastro.CadastroPassoDoisActivity">
+
+    <TextView
+        android:id="@+id/cadastroEstabelecimento_tvPassoDois"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/passo_dois"
+        android:textColor="@color/cinza_454545"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cadastroEstabelecimento_tvInsiraDados2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/insira_dados_cadastro"
+        android:textColor="@color/cinza_454545"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cadastroEstabelecimento_tvPassoDois" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cadastroEstabelecimento_tiEmail"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/email"
+        app:errorEnabled="true"
+        app:counterEnabled="true"
+        app:counterMaxLength="40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cadastroEstabelecimento_tvInsiraDados2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cadastroEstabelecimento_etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textEmailAddress"
+            android:maxLength="40" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cadastroEstabelecimento_tiNomeUsuario"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/usuario_nome"
+        app:errorEnabled="true"
+        app:counterEnabled="true"
+        app:counterMaxLength="15"
+        app:layout_constraintEnd_toEndOf="@+id/cadastroEstabelecimento_tiEmail"
+        app:layout_constraintStart_toStartOf="@+id/cadastroEstabelecimento_tiEmail"
+        app:layout_constraintTop_toBottomOf="@+id/cadastroEstabelecimento_tiEmail">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cadastroEstabelecimento_etNomeUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLength="15"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cadastroEstabelecimento_tiSobrenomeUsuario"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/usuario_sobrenome"
+        app:errorEnabled="true"
+        app:counterEnabled="true"
+        app:counterMaxLength="15"
+        app:layout_constraintEnd_toEndOf="@+id/cadastroEstabelecimento_tiNomeUsuario"
+        app:layout_constraintStart_toStartOf="@+id/cadastroEstabelecimento_tiNomeUsuario"
+        app:layout_constraintTop_toBottomOf="@+id/cadastroEstabelecimento_tiNomeUsuario">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cadastroEstabelecimento_etSobrenomeUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="15"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cadastroEstabelecimento_tiTelefone"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/telefone"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="@+id/cadastroEstabelecimento_tiSobrenomeUsuario"
+        app:layout_constraintStart_toStartOf="@+id/cadastroEstabelecimento_tiSobrenomeUsuario"
+        app:layout_constraintTop_toBottomOf="@+id/cadastroEstabelecimento_tiSobrenomeUsuario">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cadastroEstabelecimento_etTelefone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLength="20" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/cadastroEstabelecimento_btConcluir"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/concluir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cadastroEstabelecimento_tiEmail"
+        app:layout_constraintStart_toStartOf="@+id/cadastroEstabelecimento_tiEmail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

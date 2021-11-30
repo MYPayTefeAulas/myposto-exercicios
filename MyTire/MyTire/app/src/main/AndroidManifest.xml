@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="br.uea.transirie.mypay.mypaytemplate">
+
+    <uses-permission android:name="com.pax.permission.PRINTER" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.abastecer.AbastecerActivity"
+            android:exported="false" />
+        <!-- ENTRADA -->
+        <activity
+            android:name=".ui.primeiroUso.SplashActivity"
+            android:exported="true"
+            android:theme="@style/NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.home.EntradaActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".ui.home.LoginActivity"
+            android:parentActivityName=".ui.home.EntradaActivity" /> <!-- CADASTRO -->
+        <activity android:name=".ui.cadastro.CadastroPassoUnicoActivity" />
+        <activity android:name=".ui.cadastro.TelaCarregamentoActivity" />
+        <activity android:name=".ui.cadastro.GerarPinActivity" />
+        <activity android:name=".ui.cadastro.SplashCadastroConcluidoActivity" /> <!-- RECUPERAR PIN -->
+        <activity
+            android:name=".ui.recuperar_pin.RecuperarPinActivity"
+            android:label="@string/activity_title_esqueceu_pin"
+            android:parentActivityName=".ui.recuperar_pin.EscanearCodigoActivity" />
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="fullSensor"
+            tools:replace="screenOrientation" />
+        <activity
+            android:name=".ui.recuperar_pin.EscanearCodigoActivity"
+            android:label="@string/activity_title_esqueceu_pin"
+            android:parentActivityName=".ui.recuperar_pin.EnviarEmailActivity" />
+        <activity android:name=".ui.recuperar_pin.SplashEmailRecuperacaoEnviadoActivity" />
+        <activity
+            android:name=".ui.recuperar_pin.EnviarEmailActivity"
+            android:label="@string/activity_title_esqueceu_pin"
+            android:parentActivityName=".ui.home.LoginActivity" /> <!-- HOME -->
+        <activity android:name=".ui.home.HomeFuncionarioActivity" />
+        <activity
+            android:name=".ui.home.HomeGerenteActivity"
+            android:theme="@style/ListsWithSearchTheme" /> <!-- ENTRADA DE ATENDIMENTO -->
+        <activity android:name=".ui.atendimento.ResumoNovoAtendimentoActivity" />
+        <activity android:name=".ui.atendimento.ServicosNovoAtendimentoActivity" />
+        <activity
+            android:name=".ui.atendimento.NovoAtendimentoActivity"
+            android:parentActivityName=".ui.home.HomeGerenteActivity" /> <!-- PAGAMENTO -->
+        <activity
+            android:name=".ui.pagamento.PagamentoSucessoActivity"
+            android:theme="@style/SucessTheme" />
+        <activity
+            android:name=".ui.pagamento.PagamentoCartaoActivity"
+            android:label="Pagamento em cartão"
+            android:parentActivityName=".ui.pagamento.FormasPagamentoActivity" />
+        <activity
+            android:name=".ui.pagamento.PagamentoDinheiroActivity"
+            android:label="Pagamento em dinheiro"
+            android:parentActivityName=".ui.pagamento.FormasPagamentoActivity" />
+        <activity
+            android:name=".ui.pagamento.FormasPagamentoActivity"
+            android:label="Formas de pagamento"
+            android:parentActivityName=".ui.atendimento.ResumoSaidaActivity" />
+        <activity
+            android:name=".ui.atendimento.ResumoSaidaActivity"
+            android:parentActivityName=".ui.atendimento.ListaAtendimentosActivity" />
+        <activity
+            android:name=".ui.atendimento.ListaAtendimentosActivity"
+            android:parentActivityName=".ui.home.HomeGerenteActivity"
+            android:theme="@style/ListsWithSearchTheme" /> <!-- CAIXA -->
+        <activity android:name=".ui.caixa.AbrirCaixaActivity" />
+        <activity android:name=".ui.caixa.SplashPrimeiroUsoActivity" />
+        <activity android:name=".ui.caixa.HistoricoVendasActivity" />
+        <activity android:name=".ui.caixa.FecharCaixaActivity" />
+        <activity android:name=".ui.caixa.MovimentarCaixaActivity" /> <!-- HISTÓRICO -->
+        <activity
+            android:name=".ui.historico.DetalhesAtendimentoActivity"
+            android:theme="@style/ScreensWithToolBar" /> <!-- AJUSTES -->
+        <activity android:name=".ui.ajustes.AlterarPinActivity" />
+        <activity
+            android:name=".ui.ajustes.DadosCadastradosAjustesFuncActivity"
+            android:theme="@style/ScreensWithToolBar" />
+        <activity android:name=".ui.ajustes.AjustesFuncionarioActivity" />
+        <activity android:name=".ui.ajustes.SplashUpdateConcluidoActivity" />
+        <activity android:name=".ui.ajustes.EditarColaboradorActivity" />
+        <activity
+            android:name=".ui.ajustes.VisualizarColaboradorActivity"
+            android:theme="@style/ScreensWithToolBar" />
+        <activity android:name=".ui.ajustes.AdicionarColaboradorActivity" />
+        <activity
+            android:name=".ui.ajustes.ColaboradoresActivity"
+            android:theme="@style/ScreensWithToolBar" />
+        <activity
+            android:name=".ui.ajustes.DadosCadastradosGerenteActivity"
+            android:theme="@style/ScreensWithToolBar" />
+        <activity android:name=".ui.ajustes.EditarEstabelecimentoActivity" />
+        <activity android:name=".ui.ajustes.AlterarSenhaActivity" />
+        <activity
+            android:name=".ui.ajustes.SobreAplicativoActivity"
+            android:theme="@style/ScreensWithToolBar" /> <!-- SERVIÇOS -->
+        <activity
+            android:name=".ui.servicos.EditarServicoActivity"
+            android:parentActivityName=".ui.servicos.TabelaServicosActivity" />
+        <activity
+            android:name=".ui.servicos.CadastrarServicoActivity"
+            android:parentActivityName=".ui.servicos.TabelaServicosActivity" />
+        <activity
+            android:name=".ui.servicos.TabelaServicosActivity"
+            android:parentActivityName=".ui.home.HomeGerenteActivity"
+            android:theme="@style/ListsWithSearchTheme" />
+    </application>
+
+</manifest>
