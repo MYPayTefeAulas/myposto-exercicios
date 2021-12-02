@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="home_width_btnServico">156dp</dimen>
+    <dimen name="home_height_btnServico">126dp</dimen>
+
+
+    <!--
+    Because the window insets on round devices are larger than 15dp, this padding only applies
+    to square screens.
+    -->
+
+    <!--
+    This padding applies to both square and round screens. The total padding between the buttons
+    and the window insets is box_inset_layout_padding (above variable) on square screens and
+    inner_frame_layout_padding (below variable) on round screens.
+    -->
+
+
+
+    <dimen name="size_text_button">16sp</dimen>
+    <dimen name="layout_width">328dp</dimen>
+
+    <dimen name="cadastro_width">328dp</dimen>
+
+    <dimen name="margin_padrao">16dp</dimen>
+    <dimen name="button_height">48dp</dimen>
+
+
+
+
+    <dimen name="btn_height">48dp</dimen>
+    <dimen name="big_btn_height">72dp</dimen>
+
+    <dimen name="txt_marginStart">8dp</dimen>
+    <dimen name="btn_marginStart">16dp</dimen>
+    <dimen name="btn_marginEnd">16dp</dimen>
+    <dimen name="btn_marginBottom">16dp</dimen>
+    <dimen name="big_txtSize">24sp</dimen>
+    <dimen name="big_btn_txtSize">18sp</dimen>
+
+    <dimen name="text_cancel">18sp</dimen>          <!--36sp 0.9-->
+    <dimen name="text_cielo">20sp</dimen>           <!--40sp 1-->
+    <dimen name="text_name_company">16sp</dimen>    <!--32sp 0.8-->
+    <dimen name="text_normal">15sp</dimen>          <!--30sp 0.75-->
+</resources>

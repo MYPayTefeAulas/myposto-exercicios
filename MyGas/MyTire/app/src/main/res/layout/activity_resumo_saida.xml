@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.atendimento.ResumoSaidaActivity">
+
+    <ScrollView
+        android:id="@+id/resumoSaida_sv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/resumoSaida_divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/resumoSaida_cl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/resumoSaida_cl2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cinza"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/resumoSaida_tvPlaca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/placa_"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@+id/resumoSaida_tvCategoria"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <TextView
+                    android:id="@+id/resumoSaida_tvPlacaValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/placa_placeholder"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/resumoSaida_tvPlaca"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/resumoSaida_tvCategoria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/categoria_"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@id/resumoSaida_tvTelefone"
+                    app:layout_constraintStart_toStartOf="@+id/resumoSaida_tvPlaca"
+                    app:layout_constraintTop_toBottomOf="@+id/resumoSaida_tvPlaca" />
+
+                <TextView
+                    android:id="@+id/resumoSaida_tvCategoriaValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/categoria_placeholder"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/resumoSaida_tvCategoria"
+                    app:layout_constraintTop_toBottomOf="@+id/resumoSaida_tvPlacaValue" />
+
+                <TextView
+                    android:id="@+id/resumoSaida_tvTelefone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/telefone_"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@id/resumoSaida_tvDataEntrada"
+                    app:layout_constraintStart_toStartOf="@+id/resumoSaida_tvPlaca"
+                    app:layout_constraintTop_toBottomOf="@id/resumoSaida_tvCategoria" />
+
+                <TextView
+                    android:id="@+id/resumoSaida_tvTelefoneValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="7dp"
+                    android:text="@string/telefone_placeholder"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/resumoSaida_tvTelefone"
+                    app:layout_constraintTop_toBottomOf="@+id/resumoSaida_tvCategoria" />
+
+                <TextView
+                    android:id="@+id/resumoSaida_tvDataEntrada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/data_"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@id/resumoSaida_tvHoraEntrada"
+                    app:layout_constraintStart_toStartOf="@+id/resumoSaida_tvPlaca"
+                    app:layout_constraintTop_toBottomOf="@id/resumoSaida_tvTelefone" />
+
+                <TextView
+                    android:id="@+id/resumoSaida_tvDataEntradaValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/data_placeholder"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/resumoSaida_tvDataEntrada"
+                    app:layout_constraintTop_toBottomOf="@+id/resumoSaida_tvTelefone" />
+
+                <TextView
+                    android:id="@+id/resumoSaida_tvHoraEntrada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="24dp"
+                    android:text="@string/horario_entrada_"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/resumoSaida_tvPlaca"
+                    app:layout_constraintTop_toBottomOf="@id/resumoSaida_tvDataEntrada"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <TextView
+                    android:id="@+id/resumoSaida_tvHoraEntradaValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/horario_entrada_placeholder"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/resumoSaida_tvHoraEntrada"
+                    app:layout_constraintTop_toBottomOf="@+id/resumoSaida_tvDataEntradaValue" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/resumoSaida_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/resumoSaida_cl2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/resumoSaida_divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="16dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/resumoSaida_tvTotal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/resumoSaida_tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/total_"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/resumoSaida_btImprimir"
+        app:layout_constraintEnd_toStartOf="@id/resumoSaida_tvTotalValue"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/resumoSaida_tvTotalValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/total_placeholder"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/resumoSaida_tvTotal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toEndOf="@id/resumoSaida_tvTotal"
+        app:layout_constraintTop_toTopOf="@id/resumoSaida_tvTotal" />
+
+
+    <Button
+        android:id="@+id/resumoSaida_btImprimir"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginStart="@dimen/btn_marginStart"
+        android:layout_marginEnd="@dimen/btn_marginEnd"
+        android:text="@string/imprimir"
+        app:layout_constraintBottom_toTopOf="@id/resumoSaida_btPagarAgora"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/resumoSaida_btPagarAgora"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginBottom="@dimen/btn_marginBottom"
+        android:text="@string/pagar_agora"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/resumoSaida_btImprimir"
+        app:layout_constraintStart_toStartOf="@+id/resumoSaida_btImprimir" />
+</androidx.constraintlayout.widget.ConstraintLayout>

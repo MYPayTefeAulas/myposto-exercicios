@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ajustes.SobreAplicativoActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/sobre_abl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/sobre_toolBar"
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/color_ActionBar"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"
+            app:title="@string/sobre"
+            app:navigationIcon="@drawable/ic_back"
+            android:layout_height="?attr/actionBarSize"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="362dp"
+        android:layout_height="585dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sobre_abl">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/sobre_ivIconeApp"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:contentDescription="@string/description_icone_app"
+                app:layout_constraintEnd_toEndOf="@+id/sobre_ivTransire"
+                app:layout_constraintStart_toStartOf="@+id/sobre_ivTransire"
+                app:layout_constraintTop_toBottomOf="@+id/sobre_ivTransire"
+                app:srcCompat="@drawable/ic_pneu" />
+
+            <TextView
+                android:id="@+id/sobre_txtAppName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/app_name"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/sobre_ivIconeApp"
+                app:layout_constraintStart_toStartOf="@+id/sobre_ivIconeApp"
+                app:layout_constraintTop_toBottomOf="@+id/sobre_ivIconeApp" />
+
+            <TextView
+                android:id="@+id/sobre_txtDescricao"
+                android:layout_width="266dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/descricao_projeto"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@id/sobre_tvVersaoApp"
+                app:layout_constraintStart_toStartOf="@+id/sobre_tvVersaoApp"
+                app:layout_constraintTop_toBottomOf="@+id/sobre_tvVersaoApp" />
+
+            <ImageView
+                android:id="@+id/sobre_ivTransire"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:contentDescription="@string/description_logo_transire"
+                android:layout_marginTop="23dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_transire" />
+
+            <TextView
+                android:id="@+id/sobre_tvVersaoApp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="@string/versao_app"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/sobre_txtAppName"
+                app:layout_constraintStart_toStartOf="@+id/sobre_txtAppName"
+                app:layout_constraintTop_toBottomOf="@+id/sobre_txtAppName" />
+
+            <TextView
+                android:id="@+id/sobre_tvCoordProjeto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/coordenacao_projeto"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="normal|bold"
+                app:layout_constraintEnd_toEndOf="@+id/sobre_txtDescricao"
+                app:layout_constraintHorizontal_bias="0.534"
+                app:layout_constraintStart_toStartOf="@+id/sobre_txtDescricao"
+                app:layout_constraintTop_toBottomOf="@+id/sobre_txtDescricao" />
+
+            <TextView
+                android:id="@+id/sobre_tvProfCoordProjeto"
+                android:layout_width="266dp"
+                android:layout_height="41dp"
+                android:text="@string/porfessores_coordenadores_projeto"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="@+id/sobre_tvCoordProjeto"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="@+id/sobre_tvCoordProjeto"
+                app:layout_constraintTop_toBottomOf="@+id/sobre_tvCoordProjeto" />
+
+            <TextView
+                android:id="@+id/sobre_tvCoordEquipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/coordenacao_equipe"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="normal|bold"
+                app:layout_constraintEnd_toEndOf="@+id/sobre_tvProfCoordProjeto"
+                app:layout_constraintStart_toStartOf="@+id/sobre_tvProfCoordProjeto"
+                app:layout_constraintTop_toBottomOf="@+id/sobre_tvProfCoordProjeto" />
+
+            <TextView
+                android:id="@+id/sobre_tvProfCoordEquipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/professor_coordenador_equipe"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="@+id/sobre_tvCoordEquipe"
+                app:layout_constraintStart_toStartOf="@+id/sobre_tvCoordEquipe"
+                app:layout_constraintTop_toBottomOf="@+id/sobre_tvCoordEquipe" />
+
+            <TextView
+                android:id="@+id/sobre_vProfPesquisadores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/professores_pesquisadores"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="normal|bold"
+                app:layout_constraintEnd_toEndOf="@+id/sobre_tvProfCoordEquipe"
+                app:layout_constraintStart_toStartOf="@+id/sobre_tvProfCoordEquipe"
+                app:layout_constraintTop_toBottomOf="@+id/sobre_tvProfCoordEquipe" />
+
+            <TextView
+                android:id="@+id/professores_pesquisadores"
+                android:layout_width="266dp"
+                android:layout_height="wrap_content"
+                android:text="@string/professores"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="@+id/sobre_vProfPesquisadores"
+                app:layout_constraintStart_toStartOf="@+id/sobre_vProfPesquisadores"
+                app:layout_constraintTop_toBottomOf="@+id/sobre_vProfPesquisadores" />
+
+            <TextView
+                android:id="@+id/sobre_tvDesenvolvimento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/desenvolvimento"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="normal|bold"
+                app:layout_constraintEnd_toEndOf="@+id/professores_pesquisadores"
+                app:layout_constraintHorizontal_bias="0.456"
+                app:layout_constraintStart_toStartOf="@+id/professores_pesquisadores"
+                app:layout_constraintTop_toBottomOf="@+id/professores_pesquisadores" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="266dp"
+                android:layout_height="wrap_content"
+                android:text="@string/equipe_desenvolvimento"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="@+id/sobre_tvDesenvolvimento"
+                app:layout_constraintStart_toStartOf="@+id/sobre_tvDesenvolvimento"
+                app:layout_constraintTop_toBottomOf="@id/sobre_tvDesenvolvimento" />
+
+            <ImageView
+                android:id="@+id/sobre_ivLUDUS"
+                android:layout_width="62dp"
+                android:layout_height="94dp"
+                android:layout_marginStart="76dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="44dp"
+                android:contentDescription="@string/description_logo_ludus"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView18"
+                app:srcCompat="@drawable/ic_ludus" />
+
+            <ImageView
+                android:id="@+id/sobre_ivUEA"
+                android:layout_width="62dp"
+                android:layout_height="94dp"
+                android:contentDescription="@string/description_logo_uea"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/sobre_ivLUDUS"
+                app:layout_constraintTop_toTopOf="@+id/sobre_ivLUDUS"
+                app:srcCompat="@drawable/ic_uea" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

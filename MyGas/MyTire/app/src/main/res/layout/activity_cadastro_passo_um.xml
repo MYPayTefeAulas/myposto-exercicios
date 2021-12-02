@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.cadastro.CadastroPassoUmActivity">
+
+    <TextView
+        android:id="@+id/cadastroEstabelecimento_tvPassoUm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/passo_um"
+        android:textColor="@color/cinza_454545"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cadastroEstabelecimento_tvInsiraDados1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/insira_dados_cadastro"
+        android:textColor="@color/cinza_454545"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cadastroEstabelecimento_tvPassoUm" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cadastroEstabelecimento_tiNome"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:hint="@string/nome_estabelecimento"
+        app:errorEnabled="true"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:layout_constraintEnd_toEndOf="@+id/cadastroEstabelecimento_btAvancar"
+        app:layout_constraintStart_toStartOf="@+id/cadastroEstabelecimento_btAvancar"
+        app:layout_constraintTop_toBottomOf="@+id/cadastroEstabelecimento_tvInsiraDados1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cadastroEstabelecimento_etNome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLength="20"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cadastroEstabelecimento_tiCNPJ"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/cnpj"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="@+id/cadastroEstabelecimento_tiNome"
+        app:layout_constraintStart_toStartOf="@+id/cadastroEstabelecimento_tiNome"
+        app:layout_constraintTop_toBottomOf="@+id/cadastroEstabelecimento_tiNome">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cadastroEstabelecimento_etCNPJ"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:digits="0123456789.-/"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/cadastroEstabelecimento_btAvancar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/avancar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
