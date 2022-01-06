@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/search_top_bar"
+        android:title="@string/pesquisar"
+        android:contentDescription="@string/decription_pesquisa_icon"
+        android:icon="@drawable/ic_pesquisar"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"/>
+
+</menu>

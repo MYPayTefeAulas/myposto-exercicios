@@ -1,0 +1,568 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">MyGasStation</string>
+    <string name="cifrao_moeda">R$</string>
+    <string name="preco">Preço Por Litro</string>
+    <string name="cancelar">CANCELAR</string>
+    <string name="salvar">Salvar</string>
+
+    <string name="nova_entrada">Nova entrada</string>
+
+    <string name="placa">Placa</string>
+    <string name="moto">Moto</string>
+    <string name="proximo">Próximo</string>
+
+    <string name="servicos">Serviços</string>
+    <string name="registrar">Registrar</string>
+    <string name="exemplo_nome_serviço">Troca de Pneu</string>
+    <string name="exemplo_preço_serviço">R$ 20,00</string>
+
+    <string name="funcionario">Funcionário</string>
+    <string name="gerente">Gerente</string>
+    <string name="resumo_entrada">Resumo entrada</string>
+    <string name="placa_">Placa:</string>
+    <string name="placa_placeholder">PHL4F06</string>
+    <string name="categoria_">Categoria:</string>
+    <string name="categoria_placeholder">Carro pequeno</string>
+    <string name="telefone_">Telefone:</string>
+    <string name="telefone_placeholder">(92) 99452–3690</string>
+    <string name="data_">Data:</string>
+    <string name="data_placeholder">26/09/2021</string>
+    <string name="horario_entrada_">Horário de entrada:</string>
+    <string name="horario_entrada_placeholder">15h10</string>
+    <string name="total_">Total:</string>
+    <string name="total_placeholder">R$60,00</string>
+    <string name="delete_desc_alt">
+        Ícone de X para o botão de excluir um serviço do atendimento.
+    </string>
+
+    <string name="saida_desc">Botão de acesso ao lista de atendimentos pendentes para pagamento</string>
+    <string name="entrada">Botão de acesso ao cadastro de um novo atendimento</string>
+    <string name="home">MyGasStation</string>
+
+    <string name="cadastre_se">Cadastre-se</string>
+    <string name="loginCad">FAÇA O LOGIN</string>
+    <string name="nome_estabelecimento_login">Entrar como Borracharia do Zezinho</string>
+    <string name="introducao">O controle das suas vendas na palma da mão</string>
+    <string name="boas_vindas">Bem-Vindo ao MyGasStation!</string>
+    <string name="pergunta_login">Já possui conta?</string>
+    <string name="verifica_conta">Já tem uma conta?</string>
+    <string name="fazer_login">
+        <b><u>FAÇA SEU LOGIN</u></b>
+    </string>
+
+    <!-- Framework -->
+
+    <string name="title_cadastro">Cadastro</string>
+
+    <string name="passo_um">PASSO 1 DE 2</string>
+    <string name="insira_dados_cadastro">Insira seus dados de cadastro:</string>
+    <string name="nome_estabelecimento">Nome do Estabelecimento</string>
+    <string name="cnpj">CNPJ</string>
+    <string name="telefone">Telefone</string>
+    <string name="endereco">Endereço</string>
+    <string name="opcional">Opcional</string>
+    <string name="avancar">AVANÇAR</string>
+    <string name="MASK_CNPJ">[00].[000].[000]/[0000]-[00]</string>
+    <string name="erro_cnpj_ja_cadastrado">CNPJ já cadastrado.</string>
+
+    <string name="passo_dois">PASSO 2 DE 2</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="colaboradores">Colaboradores</string>
+    <string name="visualizar_colaborador">Visualizar Colaborador</string>
+    <string name="dados_cadastrados">Dados cadastrados</string>
+    <string name="cargo">Cargo</string>
+    <string name="gerenciar_colaboradores">Gerenciar Colaboradores</string>
+    <string name="pin">PIN</string>
+    <string name="usuario_nome">Nome</string>
+    <string name="usuario_sobrenome">Sobrenome</string>
+    <string name="confirmar_senha">Confirmar senha</string>
+    <string name="concluir">CONCLUIR</string>
+    <string name="extra_nome_estabelecimento">EXTRA_NOME_ESTABELECIMENTO</string>
+    <string name="extra_cnpj">EXTRA_CNPJ</string>
+    <string name="extra_telefone">EXTRA_TELEFONE</string>
+    <string name="extra_endereco">EXTRA_ENDERECO</string>
+    <string name="EXTRA_ESTABELECIMENTO">EXTRA_ESTABELECIMENTO</string>
+    <string name="EXTRA_USUARIO">EXTRA_USUARIO</string>
+    <string name="ALTERANDO_DADOS_GERENTE">ALTERANDO_DADOS_GERENTE</string>
+    <string name="EXTRA_ALTERANDO_PIN">EXTRA_ALTERANDO_PIN</string>
+    <string name="EXTRA_PRIMEIRO_USO">EXTRA_PRIMEIRO_USO</string>
+    <string name="erro_email_ja_em_uso_tente_outro">Este email já está em uso. Tente outro.</string>
+    <string name="erro_nome_ja_em_uso">Este nome já está em uso.</string>
+    <string name="EXTRA_ERRO_CADASTRO">EXTRA_ERRO_CADASTRO</string>
+    <string name="erro_firebase_insira_email_valido">The email address is badly formatted.</string>
+    <string name="erro_firebase_email_ja_em_uso_tente_outro">The email address is already in use by another account.</string>
+
+    <string name="description_ic_load">Imagem de uma roda de carregamento parada. Em tempo de execução, é substituída por uma animação própria da roda girando para informar o carregamento do processo.</string>
+    <string name="por_favor_aguarde" tools:ignore="TypographyEllipsis">Por favor aguarde...</string>
+    <string name="estamos_salvando_dados_nuvem">Estamos salvando seus dados na nuvem</string>
+    <string name="confirmar_que_e_voce">Para confirmar que é você insira seu PIN atual:</string>
+    <string name="pin_atual">PIN atual</string>
+    <string name="confirme_seu_pin_atual">Confirme seu PIN atual</string>
+    <string name="estamos_gerando_pin">Estamos gerando o seu PIN, lembre-se de memorizá-lo!</string>
+    <string name="gerar_pin_colbaorador">Para que o novo colaborador acesse sua conta será necessário uma senha de 4 dígitos (PIN). Não se preocupe, iremos cuidar disso para você. Anotar a senha que será gerada, pois ela não aparecerá novamente.</string>
+    <string name="ERRO_CADASTRO_TIMEOUT">5s timeout.</string>
+
+    <string name="description_sinal_de_visto_cadastro_do_estabelecimento">Sinal de visto nas cores do app. Nesse caso, representa a conclusão do cadastro do estabelecimento.</string>
+    <string name="cadastro_concluido_com_sucesso">Cadastro concluído com sucesso!</string>
+    <string name="dados_atualizados_com_sucesso">Dados atualizados com sucesso!</string>
+    <string name="seus_dados_foram_salvos_nuvem">Seus dados foram salvos na nuvem</string>
+    <string name="pin_acesso_atualizado">Seu PIN de acesso foi atualizado.</string>
+
+    <string name="description_ic_cancel">Um X em branco rodeado de um círculo azul.</string>
+    <string name="btn_text_tentar_novamente"><u>TENTAR NOVAMENTE</u></string>
+    <string name="verifique_conexao">Verifique a conexão da sua internet e tente novamente.</string>
+    <string name="nao_foi_possivel_concluir_cadastro">Não foi possível concluir o cadastro!</string>
+
+    <!--MyValidations-->
+    <string name="erro_campo_obrigatorio">Campo obrigatório</string>
+    <string name="erro_insira_cnpj_valido">Insira um CNPJ válido.</string>
+    <string name="erro_telefone_invalido">Insira um telefone válido.</string>
+    <string name="erro_insira_email_valido">Insira um endereço de email válido.</string>
+    <string name="erro_senha_6_ou_mais_caracteres">Insira uma senha com 6 ou mais caracteres.</string>
+    <string name="erro_pin_4_caracteres">Insira um Pin com 4 caracteres.</string>
+    <string name="erro_senhas_incompativeis">Senhas incompatíveis</string>
+    <string name="erro_pins_incompativeis">PINs incompatíveis</string>
+
+    <string name="saida">Saída</string>
+    <string name="lista_atendimentos_em_aberto">Lista de atendimentos em aberto:</string>
+    <string name="exemplo_placa">PHJ-4123</string>
+    <string name="resumo_saida">Resumo saída</string>
+    <string name="pagar_agora">Pagar agora</string>
+    <string name="reimprimir">Reimprimir</string>
+    <string name="formas_pagamento">Formas de pagamento</string>
+    <string name="cartao_de_credito">CARTÃO DE CRÉDITO</string>
+    <string name="cartao_de_debito">CARTÃO DE DÉBITO</string>
+    <string name="dinheiro">DINHEIRO</string>
+    <string name="valor">VALOR</string>
+    <string name="valor_example">R$ 60,00</string>
+
+    <string name="placa_example">PHL4F06</string>
+    <string name="concluir_pagamento">CONCLUIR PAGAMENTO</string>
+
+    <string name="titulo_pagamento_dinheiro">Dinheiro</string>
+
+    <string name="text_placa">Placa</string>
+    <string name="text_hora_entrada">Horário de Entrada</string>
+    <string name="text_hora_saida">Horário de Saída</string>
+    <string name="text_total">Total</string>
+    <string name="text_value_hora_entrada">13:15</string>
+    <string name="text_value_hora_saida">13:45</string>
+    <string name="text_value_total">R$ 60,00</string>
+    <string name="valor_recebido">Quantia</string>
+    <string name="troco">Troco</string>
+    <string name="tabela_de_servicos_maiusculo">TABELA DE SERVIÇOS</string>
+    <string name="pagamento_efetuado">PAGAMENTO EFETUADO</string>
+    <string name="check_desc">Símbolo de check. Confirma o sucesso do pagamento para o usuário.</string>
+
+    <string name="total_parcial">Total Parcial</string>
+    <string name="pagamentos_em_dinheiro">Pagamentos em Dinheiro</string>
+    <string name="pagamentos_no_cartao">Pagamentos no Cartão</string>
+    <string name="pagamentos_receber">Pagamentos à Receber</string>
+
+    <string name="saldo">Saldo em Caixa</string>
+    <string name="ajustes">Ajustes</string>
+    <string name="ajustes_maiusculo">AJUSTES</string>
+    <string name="caixa">Caixa</string>
+    <string name="historico">Histórico</string>
+    <string name="divisor">Design separador de tabela e total</string>
+    <string name="pesquisar">Procurar</string>
+    <string name="data">Data</string>
+    <string name="botao_de_resumo">Leva para o resumo do atendimento</string>
+    <string name="editar_precos">Editar Preços</string>
+    <string name="tabela_precos">Tabela de Preços</string>
+    <string name="tipo_de_combustivel">Tipo de Combustível</string>
+    <string name="cadServico_txtOrientacaopreco">Insira o tipo de combustivel e o preço:</string>
+    <string name="cadastrar_preco">Cadastro de Preços</string>
+
+    <string name="login">Login</string>
+    <string name="entrar">Entrar</string>
+
+    <string name="detalhes">Detalhes do Serviço</string>
+    <string name="delete_button_service">Botão que deleta o serviço da lista de serviços</string>
+    <string name="formato_data">dd/MM/yyyy HH:mm</string>
+    <string name="valor_">Valor</string>
+    <string name="cnpj_dois_pontos">CNPJ:</string>
+
+    <string name="EXTRA_VEICULO_ID">VEICULO_ID</string>
+
+    <string name="PREF_USER_DATA">USER</string>
+    <string name="PREF_USER_LOGADO">USER_LOGADO</string>
+    <string name="CNPJ_ESTABELECIMENTO">CNPJ_ESTABELECIMENTO</string>
+    <string name="PREF_USER_ESTABELECIMENTO_CNPJ">PREF_USER_ESTABELECIMENTO_CNPJ</string>
+    <string name="PREF_USER_IS_GERENTE">PREF_USER_IS_GERENTE</string>
+    <string name="PREF_PIN">PREF_PIN</string>
+
+    <string name="text_cpf">CPF:</string>
+    <string name="dados_estabelecimento">Dados da Empresa</string>
+    <string name="gerar_pin">Gerar Pin</string>
+    <string name="insira_seu_cnpj">Insira seu CNPJ e sua senha de 4 dígitos abaixo para entrar com a sua conta:</string>
+    <string name="insira_sua_senha_de_4_digitos">Insira sua senha de 4 dígitos abaixo para entrar com a sua conta:</string>
+    <string name="zero">0</string>
+    <string name="para_fazer_o_login">Para fazer o login você precisará dessa senha:</string>
+    <string name="gerar_pin_text">Para acessar sua conta será necessário uma senha de 4 dígitos (PIN). Não se preocupe, iremos cuidar disso para você. Só se preocupe em anotar a senha que será gerada, pois ela não aparecerá novamente.</string>
+    <string name="sobre">Sobre o Aplicativo</string>
+    <string name="sair">Sair</string>
+    <string name="sim">Sim</string>
+    <string name="edicao_dados">Transição para tela de edição de dados</string>
+    <string name="deletar_colaborador">DELETAR COLABORADOR</string>
+    <string name="deletar_conta">DELETAR CONTA</string>
+    <string name="description_sobre_aplicativo">Transição para tela sobre o aplicativo</string>
+    <string name="description_logout">Chamada de dialog de confirmação de saida da aplicação</string>
+    <string name="description_editar_servico">Botão que transita para tela de edição do serviço</string>
+    <string name="description_adicionar_servico">Botão de adicionar serviço à tabela.</string>
+    <string name="description_app_logo">
+        O logo da aplicação: um pneu em fundo branco.
+    </string>
+    <string name="MASK_PLACA" tools:ignore="TypographyDashes">[AAA]-[0-00]</string>
+
+    <string name="erro_email_invalido">Email com formato inválido.</string>
+    <string name="erro_senha_menor_que_seis_digitos">Senha menor que 6 dígitos.</string>
+    <string name="erro_conf_senha_diferente">Senhas diferentes. Insira senhas iguais.</string>
+    <string name="erro_cpf_invalido">Insira um CPF válido.</string>
+    <string name="erro_preco_maior_que_dez_k">Insira um valor menor que 10.000</string>
+    <string name="erro_soma_servicos_ultrapassa_dez_mi">A soma dos serviços não pode ultrapassar 10.000.000</string>
+
+    <string name="erro_valor_recebido_menor_que_valor_a_pagar">Valor recebido não pode ser menor que o valor a pagar.</string>
+    <string name="caixa_place_holder">0,00</string>
+    <string name="edite_os_dados_do_estabelecimento">Edite os dados do estabelecimento</string>
+    <string name="no_atendimentos_em_aberto">Não há atendimentos em aberto.</string>
+    <string name="no_pagamentos_historico">Não há pagamentos no histórico.</string>
+    <string name="carro">Carro</string>
+    <string name="caminhao">Caminhão</string>
+    <string name="bicicleta">Bicicleta</string>
+    <string name="selecione_uma_categoria">Selecione uma categoria:</string>
+    <string name="selecione_uma_categoria_error">*Selecione uma categoria:</string>
+    <string name="decription_pesquisa_icon">Ícone de lupa para o botão de pesquisa em listas.</string>
+    <string name="furo_simples">Furo Simples</string>
+    <string name="hint_pesquise_aqui">Pesquisar...</string>
+    <string name="barra_char">/</string>
+
+    <string name="senha_incorreta">Email ou senha incorretos</string>
+    <string name="hora_termino">Término:</string>
+    <string name="hora_inicio">Ínicio:</string>
+    <string name="tempo_atendimento">Tempo de entrada e saída</string>
+    <string name="servico_placeholder">Troca de pneu</string>
+    <string name="subTotal_placeholder">R$ 00,00</string>
+    <string name="data_atendimento_placeholder">Data: 00/00/0000</string>
+
+    <string name="descricao_projeto">O MyGasStation é um aplicativo da Transire Eletrônicos focado em Postos de Combustível específico do terminal de pagamento A920. Criado em 2021 no projeto de Pesquisa e Desenvolvimento MyPay, com a parceria da Universidade Estadual do Amazonas (UEA) e o LUDUS Lab (Laboratório de Tecnologia, Inovação e Economia Criativa da Universidade do Estado do Amazonas).</string>
+    <string name="description_logo_transire">Logo Transire</string>
+    <string name="versao_app">V. 1.0.1</string>
+    <string name="coordenacao_projeto">Coordenação do Projeto:</string>
+    <string name="porfessores_coordenadores_projeto">Gabriel de Lima e Silva</string>
+    <string name="coordenacao_equipe">Coordenação da Equipe:</string>
+    <string name="professor_coordenador_equipe">William Miguel Ramos</string>
+    <string name="professores_pesquisadores">Professores-pesquisadores:</string>
+    <string name="professores">Antônio Claudio Kieling, Emmerson Santa Rita da Silva, Rafael Dueire Lins, Raimundo Correa de Oliveira, Ricardo da Silva Barboza, Rodrigo Barros Bernardino, Willian Miguel Ramos, Robert Lara, Sabrina, Caio, Israel Silva.</string>
+    <string name="desenvolvimento">Desenvolvimento:</string>
+    <string name="equipe_desenvolvimento">Thalia de Souza Teixeira, Maria Caroline Afonso Siqueira, Raiane Ferreira Monteiro</string>
+    <string name="description_logo_ludus">Logo LUDUS Lab</string>
+    <string name="description_logo_uea">Logo UEA</string>
+
+
+    <string name="cadastro_concluido">Cadastro concluído</string>
+    <string name="ok">OK</string>
+    <string name="description_check_conclusao_cadastro">Check para conclusão de cadastro</string>
+    <string name="nao">Não</string>
+    <string name="extra_email">EXTRA_EMAIL</string>
+    <string name="extra_senha">EXTRA_SENHA</string>
+    <string name="atendimento_registrado">Atendimento registrado</string>
+    <string name="extra_editar_servico_id">EXTRA_EDITAR_SERVICO_ID</string>
+    <string name="historico_pagamentos">Histórico de Pagamentos:</string>
+    <string name="EXTRA_PLACA">EXTRA_PLACA</string>
+    <string name="EXTRA_TELEFONE">EXTRA_TELEFONE</string>
+    <string name="EXTRA_CATEGORIA">EXTRA_CATEGORIA</string>
+    <string name="selecione_ao_menos_um_servico">Selecione ao menos um serviço</string>
+    <string name="erro_dois_pontos">Erro: </string>
+
+    <string-array name="mes">
+        <item>Jan</item>
+        <item>Fev</item>
+        <item>Mar</item>
+        <item>Abr</item>
+        <item>Mai</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Ago</item>
+        <item>Set</item>
+        <item>Out</item>
+        <item>Nov</item>
+        <item>Dez</item>
+    </string-array>
+
+    <string-array name="ano">
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2026</item>
+        <item>2027</item>
+        <item>2028</item>
+        <item>2029</item>
+        <item>2030</item>
+        <item>2031</item>
+        <item>2032</item>
+        <item>2033</item>
+        <item>2034</item>
+        <item>2035</item>
+        <item>2036</item>
+        <item>2037</item>
+        <item>2038</item>
+        <item>2039</item>
+        <item>2040</item>
+        <item>2041</item>
+        <item>2042</item>
+        <item>2043</item>
+        <item>2044</item>
+        <item>2045</item>
+        <item>2046</item>
+        <item>2047</item>
+        <item>2048</item>
+        <item>2049</item>
+        <item>2050</item>
+        <item>2051</item>
+        <item>2052</item>
+        <item>2053</item>
+        <item>2054</item>
+        <item>2055</item>
+        <item>2056</item>
+        <item>2057</item>
+        <item>2058</item>
+        <item>2059</item>
+        <item>2060</item>
+        <item>2061</item>
+    </string-array>
+    <string-array name="Dias">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+
+    <string-array name="MesRed">
+        <item>Jan</item>
+        <item>Fev</item>
+        <item>Mar</item>
+        <item>Abr</item>
+        <item>Mai</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Ago</item>
+        <item>Set</item>
+        <item>Out</item>
+        <item>Nov</item>
+        <item>Dez</item>
+    </string-array>
+
+    <string-array name="CargosColab">
+        <item>Funcionário</item>
+        <item>Gerente</item>
+    </string-array>
+
+    <string-array name="Ano">
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2026</item>
+        <item>2027</item>
+        <item>2028</item>
+        <item>2029</item>
+        <item>2030</item>
+        <item>2031</item>
+        <item>2032</item>
+        <item>2033</item>
+        <item>2034</item>
+        <item>2035</item>
+        <item>2036</item>
+        <item>2037</item>
+        <item>2038</item>
+        <item>2039</item>
+        <item>2040</item>
+        <item>2041</item>
+        <item>2042</item>
+        <item>2043</item>
+        <item>2044</item>
+        <item>2045</item>
+        <item>2046</item>
+        <item>2047</item>
+        <item>2048</item>
+        <item>2049</item>
+        <item>2050</item>
+    </string-array>
+
+    <string-array name="ModoPagamento">
+        <item>Despesa no Dinheiro</item>
+        <item>Despesa no Cartão de Crédito</item>
+        <item>Despesa no Cartão de Débito</item>
+    </string-array>
+
+    <string name="operation_rejected">Operação cancelada</string>
+    <string name="card_request">Insira o cartão</string>
+    <string name="operation_approved">Operação Aprovada</string>
+    <string name="label_bandeira">visa</string>
+    <string name="label_tipo_pagmento">A VISTA</string>
+    <string name="label_numero_cartao">*****************%s</string>
+    <string name="label_numero_POS">VIA-ESTABELECIMENTO/POS=%s</string>
+    <string name="label_cnpj">CNPJ: %s</string>
+    <string name="label_nome_loja">NOME DA LOJA</string>
+    <string name="label_endereco_loja">ENDEREÇO DO ESTABELECIMENTO</string>
+    <string name="label_numero_estabelecimento">0000000000000001</string>
+    <string name="label_numero_documento">DOC=%s</string>
+    <string name="label_numero_autorizacao">AUT=%s</string>
+    <string name="label_data">00/00/00</string>
+    <string name="label_hora">00:00</string>
+    <string name="label_ONLC">ONL-C</string>
+    <string name="label_venda_a_credito">VENDA A CREDITO</string>
+    <string name="label_valor">VALOR:</string>
+    <string name="label_value">00,00</string>
+    <string name="label_cartao">******************9478</string>
+    <string name="label_pos">VIA-ESTABELECIMENTO/POS=121345678</string>
+    <string name="label_cnpj_exemplo" tools:ignore="TypographyDashes">CNPJ: 00.000.000/0000-00</string>
+    <string name="label_cidade_exemplo">CIDADE - UF</string>
+    <string name="label_documento_exemplo">DOC=100000</string>
+    <string name="label_autorizacao_exemplo">AUT=123456</string>
+    <string name="DIGITS_PLACA">ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-</string>
+    <string name="erro_lista_escolhidos_nao_pode_ficar_vazia">A lista de serviços escolhidos não pode ficar vazia.</string>
+    <string name="erro_se_precisar_remover_adicionar_servicos">Se precisar remover este serviço e adicionar novos, volte à tela anterior.</string>
+    <string name="desc_exclamacao_circle">Um ícone branco de exclamação em um fundo redondo vermelho. Indica a ocorrência de um erro.</string>
+    <string name="efetuar_entrada">Efetuar Entrada</string>
+    <string name="imprimir">Imprimir</string>
+
+    <string name="minha_empresa">MINHA EMPRESA</string>
+    <string name="cnpj_65464684548">CNPJ: 65464684548</string>
+    <string name="editar_dados">Editar dados</string>
+    <string name="editar_senha">Editar Senha</string>
+    <string name="alterar_seu_pin">Alterar seu PIN</string>
+    <string name="servi_os_e_produtos">Serviços e Produtos</string>
+    <string name="editar_servi_os_e_produtos">Editar serviços e produtos</string>
+    <string name="clientes">Clientes</string>
+    <string name="gerenciar_clientes">Gerenciar clientes</string>
+    <string name="informa_es_sobre_o_mytire">Informações sobre o MyGasStation</string>
+    <string name="ajuda">Ajuda</string>
+    <string name="dicas_sobre_o_app">Dicas sobre o App</string>
+    <string name="encerrar_sess_o">Encerrar Sessão</string>
+    <string name="sair_do_aplicativo">Sair do aplicativo</string>
+    <string name="atualizado_na_nuvem">Atualizado na nuvem em: 24/06/2021, 15:58.</string>
+    <string name="confirmacao">Confirmação</string>
+    <string name="resposta_pagamento">Ao completar um agendamento, após escrever os dados e escolher um serviço/produto, você vai até agenda, escolhe uma forma de pagamento e passa o cartão, paga em dinheiro ou pix.</string>
+    <string name="pergunta_agendamento">Posso excluir um serviço que agendei?</string>
+    <string name="resposta_agendamento">Sim, ao entrar na agenda você pode verificar os agendamentos, clicar em um e no canto superior direito há um botão que da a opção de editar ou excluir esse agendamento.</string>
+    <string name="pergunta_email">Como cadastro um novo email?</string>
+    <string name="resposta_email">Ao sair da sessão, na página inicial você secadastra novamente com um novo email.</string>
+    <string name="pergunta_controle">Como tenho controle do saldo em caixa?</string>
+    <string name="resposta_controle">Em finanças, você encontra o seu saldo no mês atual e também há como visualizar saldo de outros meses ao escolher um mês e gerar relatório.</string>
+    <string name="pergunta_formasdepagamento">Quais são as formas de pagamento aceitas?</string>
+    <string name="resposta_formasdepagamento">Cartão de Crédito e Débito, pagamentos por meio de dinheiro e Pix também.</string>
+    <string name="editar">Editar</string>
+    <string name="pergunta_pagamento">Como faço um pagamento pelo app?</string>
+
+    <string name="firebase_error_email_ou_senha_incorretos">There is no user record corresponding to this identifier. The user may have been deleted.</string>
+    <string name="erro_login_senha_ou_email_incorretos">Senha ou email incorretos.</string>
+    <string name="pin_incorreto">Pin incorreto</string>
+    <string name="insira_as_informações">Insira as informações do novo colaborador:</string>
+    <string name="selecione_o_cargo">Selecione o cargo</string>
+    <string name="EXTRA_SERVICO_OP">EXTRA_SERVICO_OP</string>
+    <string name="SERVICO_OP_CADASTRO">CADASTRO</string>
+    <string name="SERVICO_OP_EDITAR">EDITAR</string>
+    <string name="deletar_item">DELETAR ITEM</string>
+    <string name="SERVICO_OP_DELETAR">DELETAR</string>
+    <string name="excluir">EXCLUIR</string>
+    <string name="firebase_error_senha_incorreta">The password is invalid or the user does not have a password.</string>
+    <string name="alerta_msg_cnpj_ja_em_uso">CNPJ já em uso. Deseja fazer login?</string>
+    <string name="EXTRA_CNPJ">EXTRA_CNPJ</string>
+    <string name="erro_conexao_nome">Não foi possível verificar a disponibilidade do Nome de estabelecimento pois você não há conexão de internet. Verifique sua conexão e tente novamente.</string>
+    <string name="erro_conexao_cnpj">Não foi possível verificar a disponibilidade do CNPJ pois você não há conexão de internet. Verifique sua conexão e tente novamente.</string>
+    <string name="erro_conexao_login">Não foi possível verificar seu cadastro. Tente novamente mais tarde.</string>
+    <string name="erro_conexao_email">Não foi possível verificar a disponibilidade do Email pois você não há conexão de internet. Verifique sua conexão e tente novamente.</string>
+    <string name="erro_conexao_conecte_se_uma_rede">Conecte-se a uma rede!</string>
+    <string name="sem_conexao_rede">Sem conexão com a rede!</string>
+    <string name="nao_e_possivel_rede">Não é possível sincronizar e verificar seus dados. Deseja continuar e fazer mais tarde?</string>
+    <string name="continuar">CONTINUAR</string>
+    <string name="houve_erro_conexao">Houve um erro de conexão.</string>
+
+    <string name="esqueceuSenha"><u>Esqueceu seu Pin?</u></string>
+    <string name="activity_title_recuperar_pin">Recuperar PIN</string>
+    <string name="recuperar_pin_um_txt1">Problemas para entrar?</string>
+    <string name="recuperar_pin_um_txt2">Insira o seu email e enviaremos um QR Code para que você possa redefinir seu PIN.</string>
+    <string name="recuperar_pin_um_erro_email_nao_cadastrado">Email não cadastrado.</string>
+    <string name="erro_conexao_atividade_incomum_eng">We have blocked all requests from this device due to unusual activity. Try again later.</string>
+    <string name="erro_conexao_atividade_incomum">Todos os envios foram bloqueados devido a uma atividade incomum. Tente novamente mais tarde.</string>
+    <string name="erro_firebase_email_nao_encontrado_eng">There is no user record corresponding to this identifier. The user may have been deleted.</string>
+    <string name="erro_firebase_email_nao_encontrado">Não há registro deste usuário na nuvem. Tente novamente mais tarde.</string>
+    <string name="erro_envio_email">"Não foi possível enviar o email. Tente de novo mais tarde."</string>
+    <string name="EXTRA_USUARIO_ID">EXTRA_USUARIO_ID</string>
+    <string name="EXTRA_USUARIO_EMAIL">EXTRA_USUARIO_EMAIL</string>
+    <string name="recuperar_pin_splash_txt1">Email de recuperação enviado com sucesso!</string>
+    <string name="recuperar_pin_splash_txt2">O QR Code foi enviado para o seu email</string>
+    <string name="description_check">Ícone de check informando o sucesso da operação.</string>
+    <string name="recuperar_pin_dois_txt1">QR Code</string>
+    <string name="recuperar_pin_dois_txt2">
+        Enviamos um link para o seu email, nele
+        você vai encontrar um QR Code necessário
+        para visualizar sua senha atual.
+    </string>
+    <string name="recuperar_pin_dois_txt3">
+        Caso não tenha recebido este email,
+        aperte em "ENVIAR NOVAMENTE".
+    </string>
+    <string name="recuperar_pin_dois_btn1">ESCANEAR QR CODE</string>
+    <string name="recuperar_pin_dois_btn2">ENVIAR NOVAMENTE</string>
+    <string name="recuperar_pin_tres_txt2">Para fazer o login você precisará dessa senha:</string>
+    <string name="pin_padrao">0000</string>
+
+    <string name="memorize_seu_pin">Memorize seu PIN!</string>
+    <string name="memorize_seu_pin_txt2">Ao concluir, você não terá mais acesso a visualização do seu PIN. Tem certeza que o memorizou?</string>
+    <string name="voltar">VOLTAR</string>
+    <string name="erro_no_estabelecimento_cadastrado">Não há estabelecimento cadastrado.</string>
+    <string name="erro_dados_cache">Dados do cache são descartados pois podem não estar atualizados.</string>
+    <string name="PREF_USER_ULTIMO_UPLOAD">PREF_USER_ULTIMO_UPLOAD</string>
+    <string name="ultimo_upload_sem_data">--/--/----</string>
+    <string name="dialog_deletar_txt">Ao deletar sua conta você estará apagando todos os dados referentes a ela. Tem certeza que quer continuar?</string>
+    <string name="dialog_deletar_txt2">Ao deletar sua conta você estará apagando todos os dados referentes a ela e ao estabelecimento. Tem certeza que quer continuar?</string>
+    <string name="description_seta_lista_colaboradores">Ícone de seta para acessar o perfil do funcionário.</string>
+    <string name="description_seta_precos_combustiveis">Ícone de seta para acessar os preços cadastrados.</string>
+    <string name="title_sobre_o_aplicativo">Sobre o Aplicativo</string>
+    <string name="pin_atualizado_com_sucesso">PIN atualizado com sucesso!</string>
+    <string name="cnpj_desconhecido">XX.XXX.XXX/XXXX-XX</string>
+    <string name="EXTRA_TOPBAR_TITLE">EXTRA_TOPBAR_TITLE</string>
+    <string name="title_add_colaborador">Adicionar colaborador</string>
+    <string name="title_alterar_pin">Alterar seu PIN</string>
+    <string name="EXTRA_COLABORADOR_ADICIONADO">EXTRA_COLABORADOR_ADICIONADO</string>
+    <string name="colaborador_adicionado_sucesso">Colaborador adicionado com sucesso!</string>
+    <string name="add">adicionar</string>
+    <string name="desc_seta_colaboradores">Botão em forma de seta para acessar o perfil de um funcionário."</string>
+    <string name="EXTRA_USUARIO_IS_GERENTE">EXTRA_USUARIO_IS_GERENTE</string>
+    <string name="precos_combustiveis">Preços Combustíveis</string>
+    <string name="editar_preco">Editar Preços</string>
+</resources>

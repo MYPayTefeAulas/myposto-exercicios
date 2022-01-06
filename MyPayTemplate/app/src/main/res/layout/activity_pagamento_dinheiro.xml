@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.pagamento.PagamentoDinheiroActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/cinza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/pagDinheiro_tvPlaca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/text_placa"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <TextView
+            android:id="@+id/pagDinheiro_tvEntrada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/text_hora_entrada"
+            app:layout_constraintStart_toStartOf="@+id/pagDinheiro_tvPlaca"
+            app:layout_constraintTop_toBottomOf="@+id/pagDinheiro_tvPlacaValue" />
+
+        <TextView
+            android:id="@+id/pagDinheiro_tvSaida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="@string/text_hora_saida"
+            app:layout_constraintBottom_toBottomOf="@+id/pagDinheiro_tvEntrada"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toTopOf="@+id/pagDinheiro_tvEntrada" />
+
+        <TextView
+            android:id="@+id/pagDinheiro_tvTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/text_total"
+            app:layout_constraintStart_toStartOf="@+id/pagDinheiro_tvEntrada"
+            app:layout_constraintTop_toBottomOf="@+id/pagDinheiro_tvEntradaValue" />
+
+        <TextView
+            android:id="@+id/pagDinheiro_tvPlacaValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/placa_example"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/pagDinheiro_tvPlaca"
+            app:layout_constraintTop_toBottomOf="@+id/pagDinheiro_tvPlaca" />
+
+        <TextView
+            android:id="@+id/pagDinheiro_tvEntradaValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/text_value_hora_entrada"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/pagDinheiro_tvPlaca"
+            app:layout_constraintTop_toBottomOf="@+id/pagDinheiro_tvEntrada" />
+
+        <TextView
+            android:id="@+id/pagDinheiro_tvSaidaValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/text_value_hora_saida"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/pagDinheiro_tvSaida"
+            app:layout_constraintTop_toBottomOf="@+id/pagDinheiro_tvSaida" />
+
+        <TextView
+            android:id="@+id/pagDinheiro_tvTotalValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="25dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/text_value_total"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/pagDinheiro_tvTotal"
+            app:layout_constraintTop_toBottomOf="@+id/pagDinheiro_tvTotal" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="205dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/pagamentoDinheiro_tiValorRecebido"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+        app:prefixText="@string/cifrao_moeda">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pagamentoDinheiro_etValorRecebido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="0123456789,"
+            android:hint="@string/valor_recebido"
+            android:inputType="number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/pagamentoDinheiro_tiTroco"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:enabled="false"
+        app:errorEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pagamentoDinheiro_tiValorRecebido">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pagamentoDinheiro_etTroco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/troco" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/pagamentoDinheiro_btConcluir"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginStart="@dimen/btn_marginStart"
+        android:layout_marginEnd="@dimen/btn_marginEnd"
+        android:text="@string/concluir_pagamento"
+        app:layout_constraintBottom_toTopOf="@+id/pagamentoDinheiro_btCancelar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/pagamentoDinheiro_btCancelar"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height"
+        android:text="@string/cancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/pagamentoDinheiro_btConcluir"
+        app:layout_constraintStart_toStartOf="@+id/pagamentoDinheiro_btConcluir" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

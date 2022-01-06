@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.atendimento.NovoAtendimentoActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/novoAtendimento_tiPlaca"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/novoAtendimento_etPlaca"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:digits="@string/DIGITS_PLACA"
+            android:hint="@string/placa"
+            android:inputType="textCapCharacters|textNoSuggestions"
+            android:maxLines="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/novoAtendimento_tiTelefone"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="@id/novoAtendimento_tiPlaca"
+        app:layout_constraintStart_toStartOf="@+id/novoAtendimento_tiPlaca"
+        app:layout_constraintTop_toBottomOf="@+id/novoAtendimento_tiPlaca">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/novoAtendimento_etTelefone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/telefone"
+            android:inputType="phone"
+            android:maxLength="15"
+            android:maxLines="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/nAtend_tvCategoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/selecione_uma_categoria"
+        android:textColor="@color/categoria_txt_color"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/novoAtendimento_tiTelefone"
+        app:layout_constraintTop_toBottomOf="@+id/novoAtendimento_tiTelefone" />
+
+    <Button
+        android:id="@+id/nAtend_btnCarroOutlined"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/big_btn_height"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/carro"
+        app:layout_constraintEnd_toStartOf="@+id/nAtend_btnMotoOutlined"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nAtend_tvCategoria" />
+
+    <Button
+        android:id="@+id/nAtend_btnCarro"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/big_btn_height"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/carro"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@id/nAtend_btnMoto"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nAtend_tvCategoria" />
+
+    <Button
+        android:id="@+id/nAtend_btnMotoOutlined"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/moto"
+        app:layout_constraintBottom_toBottomOf="@+id/nAtend_btnCarroOutlined"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nAtend_btnCarroOutlined"
+        app:layout_constraintTop_toTopOf="@+id/nAtend_btnCarroOutlined" />
+
+    <Button
+        android:id="@+id/nAtend_btnMoto"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/moto"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/nAtend_btnCarro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/nAtend_btnCarro"
+        app:layout_constraintTop_toTopOf="@id/nAtend_btnCarro" />
+    <!--
+    <Button
+        android:id="@+id/nAtend_btnCaminhaoOutlined"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/big_btn_height"
+        android:text="@string/caminhao"
+        app:layout_constraintEnd_toEndOf="@+id/nAtend_btnCarroOutlined"
+        app:layout_constraintStart_toStartOf="@+id/nAtend_btnCarroOutlined"
+        app:layout_constraintTop_toBottomOf="@+id/nAtend_btnCarroOutlined" />
+
+    <Button
+        android:id="@+id/nAtend_btnCaminhao"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/big_btn_height"
+        android:text="@string/caminhao"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@id/nAtend_btnCarro"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/nAtend_btnCarro"
+        app:layout_constraintTop_toBottomOf="@id/nAtend_btnCarro" />
+
+    <Button
+        android:id="@+id/nAtend_btnBicicleta"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/bicicleta"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/nAtend_btnCaminhao"
+        app:layout_constraintEnd_toEndOf="@id/nAtend_btnMoto"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/nAtend_btnMoto"
+        app:layout_constraintTop_toBottomOf="@id/nAtend_btnMoto"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/nAtend_btnBicicletaOutlined"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/bicicleta"
+        app:layout_constraintBottom_toBottomOf="@+id/nAtend_btnCaminhaoOutlined"
+        app:layout_constraintEnd_toEndOf="@+id/nAtend_btnMotoOutlined"
+        app:layout_constraintStart_toStartOf="@+id/nAtend_btnMotoOutlined"
+        app:layout_constraintTop_toBottomOf="@+id/nAtend_btnMotoOutlined" />
+    -->
+
+    <Button
+        android:id="@+id/novoAtendimento_btProximo"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/avancar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

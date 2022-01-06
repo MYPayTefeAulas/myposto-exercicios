@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.abastecimento.AbastecerGasolinaActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarActivityGasolina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/arrow_back_black_24dp"
+        app:title="Gasolina"
+        app:titleTextColor="@color/white" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/LayoutInputTipoDeCombustivel"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Tipo de Combustível"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="none"
+            android:textColor="#B3000000" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Selecione o meio de cobrança:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LayoutInputTipoDeCombustivel" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="323dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <RadioButton
+            android:id="@+id/rbReal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Real" />
+
+        <RadioButton
+            android:id="@+id/rbLitros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Litros" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Digite a quantia solicitada:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/LayoutInputQuantiaGasolina"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="317dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:prefixText="R$"
+        app:prefixTextColor="#B3000000">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtQuantiaGasolina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quantia"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textColor="#B3000000" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btQuantiaOk"
+        android:layout_width="57dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:text="Ok"
+        app:layout_constraintBottom_toBottomOf="@+id/LayoutInputQuantiaGasolina"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/LayoutInputQuantiaGasolina"
+        app:layout_constraintTop_toTopOf="@+id/LayoutInputQuantiaGasolina" />
+
+    <TextView
+        android:id="@+id/txtLitrosValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:text=""
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LayoutInputQuantiaGasolina" />
+
+    <TextView
+        android:id="@+id/txtTotalLitrosValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:text=""
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/txtLitrosValor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btQuantiaOk"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btIrParaPagamentoActivity"
+        android:layout_width="337dp"
+        android:layout_height="48dp"
+        android:text="Ir para o pagamento"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLitrosValor"
+        app:layout_constraintVertical_bias="0.482" />
+</androidx.constraintlayout.widget.ConstraintLayout>
