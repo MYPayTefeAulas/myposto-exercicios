@@ -8,6 +8,7 @@ import android.text.TextUtils
 import android.text.TextWatcher
 import android.util.Log
 import android.view.View
+import android.widget.ArrayAdapter
 import br.uea.transirie.mypay.mypaytemplate.R
 import br.uea.transirie.mypay.mypaytemplate.databinding.ActivityAbastecerGasolinaBinding
 import br.uea.transirie.mypay.mypaytemplate.repository.sqlite.PREF_DATA_NAME
@@ -28,35 +29,50 @@ class AbastecerGasolinaActivity : AppCompatActivity() {
     private var quantiaGasolina = 0f
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_abastecer_gasolina)
+        preencherDropDown()
         toolbarActivityGasolina.setNavigationOnClickListener { finish() }
         val preference = getSharedPreferences(PREF_DATA_NAME, MODE_PRIVATE)
+
+        val valorCombustivelPorLitro = preference.getString("valorCombusivelPorLitro","0").toString().toFloat()
+
+        val quantidadeLitrosSolicitada = preference.getString("quantidadeLitrosSolicitada","0").toString().toFloat()
+        val quantidadeReaisSolicidada = preference.getString("quantidadeReaisSolicitada", "0").toString().toFloat()
+
+        val totalEmLitros = quantidadeReaisSolicidada / valorCombustivelPorLitro
+        val totalEmReais = valorCombustivelPorLitro * quantidadeLitrosSolicitada
 
 
         autoCompleteTextView4.setOnDismissListener {
             LayoutInputTipoDeCombustivel.error = null
+
             if (autoCompleteTextView4.text.toString() == ""){
                 LayoutInputTipoDeCombustivel.error = "Seleção requerida"
             }else{
-                val selecionarCombustiveis = autoCompleteTextView4.text.toString().split("")
-                val valorCombustiveis = selecionarCombustiveis[0].toInt()
-//                val resultadoTotalEmReais =
-//                val resultadoTotalEmLitros =
+                val Combustiveis = autoCompleteTextView4.text.toString().split("")
+                val tiposCombustiveis = Combustiveis[0].toInt()
+                val resultadoTotalEmReais = preference.edit()
+                val resultadoTotalEmLitros = preference.edit()
+                val editor = preference.edit()
+                editor.putString("SelecionarTipos",tiposCombustiveis.toString())
+                editor.apply()
 
 
-                txtTotalLitrosValor.text = "R$"
+                txtTotalLitrosValor.text = "${totalEmLitros} L"
+                txtTotalLitrosValor.text = "R$ ${df.format(totalEmReais).replace(".",",")}"
             }
         }
 
-        txtTotalLitrosValor.text = "R$ ${df.format(quantiaGasolina).replace(".",",")}"
+//        txtTotalLitrosValor.text = "R$ ${df.format(quantiaGasolina).replace(".",",")}"
 
         var totalGasolina = -1f
 
         btQuantiaOk.setOnClickListener {
 
-
             LayoutInputQuantiaGasolina.error = null
+
             if (txtQuantiaGasolina.text.toString().isEmpty()){
                 LayoutInputQuantiaGasolina.error = "Campo Obrigatório"
             } else{
@@ -78,8 +94,9 @@ class AbastecerGasolinaActivity : AppCompatActivity() {
                     txtTotalLitrosValor.text = "RS ${df.format(totalGasolina).replace(".",",")}"
                }
             }
-        }
 
+
+        }
 
 
         Log.d("TotalGasolina", totalGasolina.toString())
@@ -95,12 +112,15 @@ class AbastecerGasolinaActivity : AppCompatActivity() {
 
         btIrParaPagamentoActivity.setOnClickListener {
             val intent = Intent(context, FormasPagamentoActivity::class.java)
-
             startActivity(intent)
         }
 
+    }
 
-
+    private fun preencherDropDown(){
+        val tiposDeCombustiveis = resources.getStringArray(R.array.TiposDeCombustiveis)
+        val arrayAdapter = ArrayAdapter(this, R.layout.dropdown_meta,tiposDeCombustiveis)
+        autoCompleteTextView4.setAdapter(arrayAdapter)
     }
 
 }

@@ -38,6 +38,7 @@ class CadastrarServicoActivity : AppCompatActivity() {
     /**
      * Função que verifica se os dados são válidos e então realiza o cadastro do serviço.
      */
+
     private fun saveServiceData() {
         hasErrors { callback ->
             if (!callback){

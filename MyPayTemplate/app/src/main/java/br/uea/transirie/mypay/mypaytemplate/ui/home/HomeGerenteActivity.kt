@@ -25,7 +25,7 @@ class HomeGerenteActivity : AppCompatActivity() {
     companion object {
         private const val FRAGMENT_HOME = "FRAGMENT_HOME"
         private const val FRAGMENT_CAIXA = "FRAGMENT_CAIXA"
-        private const val FRAGMENT_HISTORICO = "FRAGMENT_HISTORICO"
+//        private const val FRAGMENT_HISTORICO = "FRAGMENT_HISTORICO"
         private const val FRAGMENT_AJUSTES = "FRAGMENT_AJUSTES"
     }
 
